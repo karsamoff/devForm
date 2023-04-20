@@ -1,0 +1,190 @@
+/*El Modal (Fondo)*/
+
+
+
+.modal {
+    display: none;
+    /* Hidden by default -oculto por defecto-*/
+    position: fixed;
+    /*Stay in place-permanecer en su lugar*/
+    z-index: 1;
+    /*sit on top-sientate encima*/
+    padding-bottom: 0px;
+    /*Location of the box*/
+    left: 0%;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /*Enable scroll if needed-Habilitar desplazamiento si es necesario*/
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*modal-content*/
+.modal-content {
+    background-color: #fefefe;
+   /*  margin: 300px; */
+    padding: 0 51px;
+    border: 1px solid #888;
+    width: 458px;
+    height: 450px;
+     margin: 0 auto; 
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+   /*  justify-content: center; */
+    margin-top: 88px;
+    padding-left: 46px;
+}
+
+.tittle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-family: Fira Sans !important;
+    font-weight: 600;
+    color: #bfa264;
+    margin-top: 47px;
+
+}
+
+.sub_tittle {
+    text-align: center;
+    font-size: 15px;
+    line-height: 10px;
+    letter-spacing: 1.12px;
+    font-weight: 500;
+    color: #000;
+    margin-top: -2px;
+    margin-bottom: 8px;
+    font-family: Fira Sans !important;
+}
+
+.modal-content .inpts {
+    text-align: center;
+    flex-direction: column;
+    display: flex !important;
+    margin-top: 5px;
+}
+
+.inp1 {
+    background-color: #fff!important;
+    border: 1px solid #b9b9b9;
+    border-radius: 0;
+    outline: 0;
+    padding: 6px 15px;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 14px;
+    letter-spacing: .4px;
+    color: grey;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: Fira Sans!important;
+    font-weight: 300;
+    margin: 3px 0;
+}
+
+.inp2 { 
+    background-color: #fff!important;
+    border: 1px solid #b9b9b9;
+    border-radius: 0;
+    outline: 0;
+    padding: 6px 15px;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 14px;
+    letter-spacing: .4px;
+    color: grey;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: Fira Sans!important;
+    font-weight: 300;
+    margin: 7px 0;
+}
+  
+
+.inp3 {
+    background-color: #fff!important;
+    border: 1px solid #b9b9b9;
+    border-radius: 0;
+    outline: 0;
+    padding: 6px 15px;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 14px;
+    letter-spacing: .4px;
+    color: grey;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: Fira Sans!important;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.scrol::-webkit-scrollbar
+{
+    width: 2px;
+}
+
+.scrol::-webkit-scrollbar-thumb
+{
+    
+    width: 2px;
+    color: #888;
+
+}
+.scrol
+{
+    overflow-y: auto;
+    max-height: 53px ;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 1.12px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Fira Sans!important;
+    text-align: center;
+    
+}
+
+.check
+{
+    font-size: 10px;
+    text-align: center;
+}
+
+.btn_submit {
+    text-align: center;
+    margin-top: 12px;
+
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    background-color: red;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    color: #fff;
+    background-color: rebeccapurple;
+}
