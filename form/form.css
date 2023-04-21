@@ -23,17 +23,18 @@
 /*modal-content*/
 .modal-content {
     background-color: #fefefe;
-   /*  margin: 300px; */
-    padding: 0 51px;
+    /*  margin: 300px; */
+    padding: 0 51px 30px;
     border: 1px solid #888;
     width: 458px;
-    height: 450px;
-     margin: 0 auto; 
+    height: auto !important; 
+    margin: 0 auto;
     box-sizing: border-box;
     -webkit-box-pack: center;
-   /*  justify-content: center; */
+    /*  justify-content: center; */
     margin-top: 88px;
     padding-left: 46px;
+    box-sizing: border-box;
 }
 
 .tittle {
@@ -51,7 +52,7 @@
 .sub_tittle {
     text-align: center;
     font-size: 15px;
-    line-height: 10px;
+    line-height: 1.2;
     letter-spacing: 1.12px;
     font-weight: 500;
     color: #000;
@@ -68,7 +69,7 @@
 }
 
 .inp1 {
-    background-color: #fff!important;
+    background-color: #fff !important;
     border: 1px solid #b9b9b9;
     border-radius: 0;
     outline: 0;
@@ -82,13 +83,13 @@
     display: flex;
     align-items: center;
     text-align: left;
-    font-family: Fira Sans!important;
+    font-family: Fira Sans !important;
     font-weight: 300;
     margin: 3px 0;
 }
 
-.inp2 { 
-    background-color: #fff!important;
+.inp2 {
+    background-color: #fff !important;
     border: 1px solid #b9b9b9;
     border-radius: 0;
     outline: 0;
@@ -102,14 +103,14 @@
     display: flex;
     align-items: center;
     text-align: left;
-    font-family: Fira Sans!important;
+    font-family: Fira Sans !important;
     font-weight: 300;
     margin: 7px 0;
 }
-  
+
 
 .inp3 {
-    background-color: #fff!important;
+    background-color: #fff !important;
     border: 1px solid #b9b9b9;
     border-radius: 0;
     outline: 0;
@@ -123,49 +124,58 @@
     display: flex;
     align-items: center;
     text-align: left;
-    font-family: Fira Sans!important;
+    font-family: Fira Sans !important;
     font-weight: 300;
     margin: 5px 0;
 }
 
-.scrol::-webkit-scrollbar
-{
+.scrol::-webkit-scrollbar {
     width: 2px;
+    background-color: gray;
 }
 
-.scrol::-webkit-scrollbar-thumb
-{
-    
+.scrol::-webkit-scrollbar-thumb {
+
     width: 2px;
-    color: #888;
+    background-color: #000;
 
 }
-.scrol
-{
+
+.scrol {
     overflow-y: auto;
-    max-height: 53px ;
+    max-height: 53px;
     font-size: 10px;
     line-height: 10px;
     letter-spacing: 1.12px;
     font-weight: 500;
     color: #000;
-    margin-top: 10px;
+    margin-top: 13px;
     margin-bottom: 10px;
-    font-family: Fira Sans!important;
+    font-family: Fira Sans !important;
     text-align: center;
-    
+
 }
 
-.check
-{
+.check {
     font-size: 10px;
     text-align: center;
+    margin-top: 12px;
 }
 
 .btn_submit {
     text-align: center;
-    margin-top: 12px;
+    margin-top: 16px;
+    font-family: Fira Sans !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    border-radius: 0;
+}
 
+.btnSubmit {
+    background-color: #d3bd91;
+    padding: 5px 25px;
+    border: 1px solid transparent;
 }
 
 .close {
@@ -173,6 +183,8 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    padding: 17px 0px;
+    margin: -1px -24px
 }
 
 .close:hover,
@@ -183,8 +195,12 @@
     cursor: pointer;
 }
 
-button:hover,
-button:focus {
-    color: #fff;
-    background-color: rebeccapurple;
+@media screen and (max-width:767px) {
+    .modal-content {
+        width: 90%
+    }
 }
+
+@media screen and(min-width:768) and (max-width:1024px) {}
+
+@media screen and(min-width:1025px) {}
